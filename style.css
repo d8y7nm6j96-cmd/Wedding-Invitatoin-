@@ -1,0 +1,389 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(212,175,55,.15),
+    transparent 35%),
+    #07102A;
+
+    color:white;
+    overflow-x:hidden;
+}
+
+/* COVER PAGE */
+
+.cover-screen{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:40px 20px;
+}
+
+.cover-content{
+    max-width:1100px;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.bismillah{
+    font-family:'Amiri',serif;
+    color:#D4AF37;
+    font-size:4rem;
+    margin-bottom:30px;
+}
+
+.arabic-verse{
+    font-family:'Amiri',serif;
+
+    font-size:2rem;
+
+    line-height:2;
+
+    max-width:1000px;
+
+    margin-bottom:30px;
+}
+
+.english-verse{
+    max-width:800px;
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+.reference{
+    color:#D4AF37;
+
+    margin-bottom:40px;
+
+    font-weight:600;
+}
+
+.enter-btn{
+
+    background:#D4AF37;
+    color:#07102A;
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:50px;
+
+    font-size:1.1rem;
+
+    cursor:pointer;
+
+    transition:.4s;
+}
+
+.enter-btn:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 30px rgba(212,175,55,.4);
+
+}
+
+/* COUPLE PAGE */
+
+.couple-section{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:100px 20px;
+}
+
+.small-title{
+    color:#D4AF37;
+
+    letter-spacing:5px;
+
+    margin-bottom:40px;
+}
+
+.couple-name{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:5.5rem;
+
+    background:linear-gradient(
+        90deg,
+        #fff8dc,
+        #ffd700,
+        #d4af37,
+        #fff8dc
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    margin:10px 0;
+}
+
+.heart{
+
+    color:#ff6b81;
+
+    font-size:4rem;
+
+    margin:20px 0;
+
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.1);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.couple-message{
+
+    max-width:700px;
+
+    line-height:2;
+
+    color:#d1d5db;
+
+    margin-top:30px;
+}
+
+.wedding-date{
+
+    margin-top:30px;
+
+    color:#D4AF37;
+
+    font-size:1.4rem;
+
+    font-weight:600;
+}
+
+/* COUNTDOWN */
+
+.countdown-section{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.countdown-section h2{
+
+    color:#D4AF37;
+
+    margin-bottom:50px;
+}
+
+.countdown-container{
+
+    display:flex;
+
+    gap:25px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+}
+
+.time-box{
+
+    width:180px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(212,175,55,.2);
+}
+
+.time-box span{
+
+    display:block;
+
+    font-size:3rem;
+
+    color:#D4AF37;
+
+    font-weight:bold;
+}
+
+/* DETAILS */
+
+.details-section{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:25px;
+
+    padding:80px 20px;
+}
+
+.detail-card{
+
+    width:100%;
+
+    max-width:700px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(212,175,55,.2);
+
+    text-align:center;
+}
+
+.detail-card h3{
+
+    color:#D4AF37;
+
+    margin-bottom:15px;
+}
+
+.detail-card a{
+
+    color:#D4AF37;
+
+    text-decoration:none;
+
+    font-weight:bold;
+}
+
+.detail-card a:hover{
+
+    text-decoration:underline;
+}
+
+/* FOOTER */
+
+footer{
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+footer p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    line-height:1.8;
+}
+
+footer h3{
+
+    color:#D4AF37;
+
+    margin-top:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .bismillah{
+        font-size:2.5rem;
+    }
+
+    .arabic-verse{
+        font-size:1.3rem;
+    }
+
+    .couple-name{
+        font-size:2.8rem;
+    }
+
+    .heart{
+        font-size:3rem;
+    }
+
+    .time-box{
+        width:140px;
+    }
+
+}
+.cover-content{
+    animation:fadeUp 1.5s ease;
+}
+
+.couple-section,
+.countdown-section,
+.details-section{
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
